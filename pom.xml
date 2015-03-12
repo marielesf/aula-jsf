@@ -12,7 +12,7 @@
 		<directory>${project.basedir}/target</directory>
 		<outputDirectory>${project.build.directory}/classes</outputDirectory>
 		<finalName>${project.artifactId}-${project.version}</finalName>
-		<sourceDirectory>${project.basedir}/src/main</sourceDirectory>
+		<sourceDirectory>${project.basedir}/src</sourceDirectory>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -31,7 +31,7 @@
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 					<webResources>
 						<resource>
-							<directory>${project.basedir}/src/main</directory>
+							<directory>${project.basedir}/src</directory>
 							<targetPath>WEB-INF/classes</targetPath>
 							<includes>
 								<include>**/*.properties</include>
